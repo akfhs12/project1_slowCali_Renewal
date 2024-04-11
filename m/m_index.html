@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>슬로우캘리 모바일 페이지</title>
+  <!-- 파비콘 -->
+  <link href="./m_images/pavicon.ico" rel="shortcut icon" type="image/x-icon">
+  <!-- 폰트 어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- 초기화 -->
+  <link href="./m_css/css_reset.css" rel="stylesheet" type="text/css">
+  <!-- 공통서식 -->
+  <link href="./m_css/m_common.css" rel="stylesheet" type="text/css">
+  <!-- 메인서식 -->
+  <link href="./m_css/m_main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <!-- 로고 -->
+    <h1 class="logo">
+      <a href="m_index.html" title="슬로우캘리 메인페이지 바로가기">
+        <img src="./m_images/m_logo2.png" alt="슬로우캘리 메인페이지 바로가기" class="logo_img">
+      </a>
+    </h1>
+    <!-- 메뉴 토글 -->
+    <input type="checkbox" id="toggle">
+    <label for="toggle" id="menu_btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="t_menu_shadow_box">
+      <nav class="t_menu">
+        <ul>
+          <li>
+            <input type="checkbox" id="slow_toggle">
+            <label for="slow_toggle" class="lnb_menu_btn t_menu_title">
+              슬로우캘리
+              <i class="fa-solid fa-caret-down"></i>
+            </label>
+            <ul class="t_menu_lnb">
+              <li><a href="slowcali.html" title="슬로우캘리 브랜드 소개">슬로우캘리</a></li>
+              <li><a href="position.html" title="매장찾기">매장찾기</a></li>
+              <li><a href="interiol.html" title="인테리어">인테리어</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="menu_toggle">
+            <label for="menu_toggle" class="lnb_menu_btn t_menu_title">
+              메뉴
+              <i class="fa-solid fa-caret-down"></i>
+            </label>
+            <ul class="t_menu_lnb">
+              <li><a href="poke.html" title="포케">포케</a></li>
+              <li><a href="bowl.html" title="보울">보울</a></li>
+              <li><a href="grill.html" title="그릴">그릴</a></li>
+              <li><a href="menu_side.html" title="사이드">사이드</a></li>
+              <li><a href="topping.html" title="토핑">토핑</a></li>
+            </ul>
+          </li>
+          <li><a href="nutrition.html" title="영양정보" class="t_menu_title">영양정보</a></li>
+          <li>
+            <input type="checkbox" id="news_toggle">
+            <label for="news_toggle" class="lnb_menu_btn t_menu_title">
+              새소식
+              <i class="fa-solid fa-caret-down"></i>
+            </label>
+            <ul class="t_menu_lnb">
+              <li><a href="news.html" title="뉴스">뉴스</a></li>
+              <li><a href="notice.html" title="공지사항">공지사항</a></li>
+              <li><a href="evnet.html" title="이벤트">이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="chain_toggle">
+            <label for="chain_toggle" class="lnb_menu_btn t_menu_title">
+              가맹점
+              <i class="fa-solid fa-caret-down"></i>
+            </label>
+            <ul class="t_menu_lnb">
+              <li><a href="chain.html" title="가맹안내">가맹안내</a></li>
+              <li><a href="chain_ask.html" title="가맹신청">가맹신청</a></li>
+              <li><a href="chain_faq.html" title="가맹안내">가맹관련FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="goods.html" title="굿즈" class="t_menu_title">굿즈</a></li>
+          <li><a href="faq.html" title="자주묻는질문" class="t_menu_title">FAQ</a></li>
+          <li><a href="instaLink.html" title="슬로우캘리 인스타그램" class="t_menu_title"><i
+                class="fa-brands fa-instagram"></i></a></li>
+          <li><label for="toggle"> <i class="fa-solid fa-xmark"></i></label></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 스와이퍼 슬라이드 -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" title="슬라이드">
+            <img src="./m_images/m_slide1.jpg" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="슬라이드">
+            <img src="./m_images/m_slide2.jpg" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="슬라이드">
+            <img src="./m_images/m_slide3.jpg" alt="슬라이드 이미지">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 매장 찾기 버튼 -->
+    <div class="chain_btn_box">
+      <a href="m_position.html" title="매장찾기" class="chain_btn">매장찾기</a>
+    </div>
+
+    <!-- 메뉴 콘텐츠 -->
+    <section class="pm_menu">
+      <h2 class="pm_menu_title2">MENU</h2>
+      <p class="pm_menu_txt">
+        맛도 건강도 사로잡는, 슬로우캘리의 균형잡힌 한 끼
+      </p>
+
+      <!-- 메뉴 내부 슬라이드 -->
+      <article class="pm_menu_con">
+        <h3>메뉴 콘텐츠</h3>
+        <!-- Swiper -->
+        <div class="swiper2 mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" title="메뉴" class="pm_menu_con_a">
+                <img src="./m_images/black-pepper-chicken-bowl.png" alt="블랙페퍼 치킨 보울" class="pm_menu_con_a_img">
+                <p class="pm_menu_con_a_titleKr">블랙페퍼 치킨 보울</p>
+                <p class="pm_menu_con_a_titleEng">Black Pepper Chicken bowl</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="메뉴" class="pm_menu_con_a">
+                <img src="./m_images/classic_salmon_poke.png" alt="클래식 연어 포케" class="pm_menu_con_a_img">
+                <p class="pm_menu_con_a_titleKr">클래식 연어 포케</p>
+                <p class="pm_menu_con_a_titleEng">Classic salmon poke</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="메뉴" class="pm_menu_con_a">
+                <img src="./m_images/hawaiian_garlic_shrimp.png" alt="하와이안 갈릭 쉬림프" class="pm_menu_con_a_img">
+                <p class="pm_menu_con_a_titleKr">하와이안 갈릭 쉬림프</p>
+                <p class="pm_menu_con_a_titleEng">Hawaiian garlic shrimp</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="메뉴" class="pm_menu_con_a">
+                <img src="./m_images/lime_ponzu_octopus_poke.png" alt="라임폰즈 문어 포케" class="pm_menu_con_a_img">
+                <p class="pm_menu_con_a_titleKr">라임폰즈 문어 포케</p>
+                <p class="pm_menu_con_a_titleEng">lime ponzu octopus poke</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="메뉴" class="pm_menu_con_a">
+                <img src="./m_images/oriental_tofu_poke.png" alt="오리엔탈 두부 포케" class="pm_menu_con_a_img">
+                <p class="pm_menu_con_a_titleKr">오리엔탈 두부 포케</p>
+                <p class="pm_menu_con_a_titleEng">Oriental tofu poke</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="메뉴" class="pm_menu_con_a">
+                <img src="./m_images/spicy_salmon_poke.png" alt="스파이시 연어 포케" class="pm_menu_con_a_img">
+                <p class="pm_menu_con_a_titleKr">스파이시 연어 포케</p>
+                <p class="pm_menu_con_a_titleEng">Spicy Salmon Poke</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 슬로우캘리는 지금 -->
+    <article class="pm_now">
+      <h2 class="pm_now_title2">슬로우캘리는 지금</h2>
+      <div class="pm_now_box">
+        <h3 class="pm_now_title3">진행중인 이벤트</h3>
+        <a href="#" title="이벤트 배너">
+          <img src="./m_images/event.png" alt="이벤트 배너" class="pm_now_box_img">
+        </a>
+        <a href="m_event.html" title="더보기" class="pm_now_box_detail">더보기</a>
+      </div>
+    </article>
+
+    <!-- 공지사항 -->
+    <article class="pm_notice">
+      <h3 class="pm_notice_title3">
+        <a href="m_notice.html" title="공지사항 바로가기">공지사항
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </h3>
+      <ul class="pm_notice_ul">
+        <li class="pm_notice_ul_li">
+          <a href="m_notice1.html" title="공지사항 콘텐츠">
+            <span>브랜드 대상 도전</span>
+            <span>2024.04.01</span>
+          </a>
+        </li>
+        <li class="pm_notice_ul_li">
+          <a href="m_notice1.html" title="공지사항 콘텐츠">
+            <span>브랜드 대상 도전</span>
+            <span>2024.04.01</span>
+          </a>
+        </li>
+        <li class="pm_notice_ul_li">
+          <a href="m_notice1.html" title="공지사항 콘텐츠">
+            <span>브랜드 대상 도전</span>
+            <span>2024.04.01</span>
+          </a>
+        </li>
+        <li class="pm_notice_ul_li">
+          <a href="m_notice1.html" title="공지사항 콘텐츠">
+            <span>브랜드 대상 도전</span>
+            <span>2024.04.01</span>
+          </a>
+        </li>
+      </ul>
+    </article>
+
+    <!-- 인스타그램 -->
+    <article class="pm_insta">
+      <h3 class="pm_insta_title3"> INSTAGRAM</h3>
+      <div class="pm_insta_box">
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./m_images/m_insta1.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./m_images/m_insta2.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./m_images/m_insta3.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./m_images/m_insta4.png" alt="인스타그램 게시글">
+        </a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="pm_fnb_nav">
+      <span><a href="agreement.html" title="이용약관">이용약관</a></span>
+      <strong><a href="personal.html" title="개인정보처리방침">개인정보처리방침</a></strong>
+    </div>
+    <div class="pm_fnb">
+      <p>슬로우캘리 &#124; Slow Cali</p>
+      <p>주식회사 더슬로우컴퍼니 &#124; 대표: 홍길동 &#124; 개인정보관리책임자: 홍길동</p>
+      <p>서울특별시 종로구 관수동 20 국일관드림팰리스 2층</p>
+      <p>가맹문의: 1234-5678 &#124; 사업자등록번호: 123-45-67890</p>
+      <p>akfhs12@gamil.com</p>
+    </div>
+
+    <!-- 마크업 검사 뱃지 -->
+    <div class="markup">
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="올바른 CSS입니다!">
+        </a>
+    </p>
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="올바른 CSS입니다!">
+          </a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+    });
+  </script>
+</body>
+
+</html>

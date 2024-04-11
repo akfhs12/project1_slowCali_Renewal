@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+:root {
+
+  --main_txt_color_dark: #251a18;
+  --main_txt_color_light: #fff8f0;
+  --sub_box_color_pupple: #524FC7;
+  --sub_box_color_blue: #002B93;
+  --point_color2: #F97D1D;
+
+  --title2_size: 44px;
+  --m_title_size: 26px;
+  --m_cont_size_big: 18px;
+  --m_cont_size_mid: 16px;
+  --m_cont_size_small: 12px;
+}
+
+body{
+  font-size: var(--m_cont_size_small);
+}
+h2{
+  font-weight: bold;
+  font-size: var(--m_title_size);
+}
+h3{
+  font-size: var(--m_cont_size_mid);
+}
+
+/* 스와이퍼 슬라이드 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper2 {
+  width: 40%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet{
+  width: 16px;
+  height: 16px;
+  background-color: var(--sub_box_color_pupple);
+}
+
+/* 매장 찾기 버튼 */
+.chain_btn_box{
+  position: relative;
+}
+.chain_btn{
+  display: block;
+  position: absolute;
+  width: 30%;
+  top: -27.8px;
+  right: 0;
+  z-index: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  color: var(--main_txt_color_light);
+  background-color: var(--point_color2);
+  border-radius: 15px 0 0 15px;
+}
+
+/* 여백 공통 */
+.pm_menu, .pm_now, .pm_notice, .pm_insta{
+  width: 90%;
+  margin: 0 auto 80px;
+}
+
+/* 메뉴 콘텐츠 */
+.pm_menu{
+  padding-top: 50px;
+  text-align: center;
+}
+.pm_menu_title2{
+  color: var(--point_color2);
+}
+.pm_menu_txt{
+  font-weight: 500;
+}
+/* 메뉴 내부 슬라이드 */
+.pm_menu_con{
+  margin: 15px auto;
+  width: 100%;
+  border: 10px solid var(--main_txt_color_light);
+  background-color: var(--main_txt_color_light);
+  border-radius: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pm_menu_con h3{
+  display: none;
+}
+.pm_menu_con .swiper-slide{
+  margin: 20px 10px;
+  height: 187px;
+}
+.pm_menu_con_a{
+  width: 132px;
+}
+.pm_menu_con_a_titleKr{
+  font-size: var(--m_cont_size_small);
+  font-weight: 500;
+}
+.pm_menu_con_a_titleEng{
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* 슬로우캘리는 지금 */
+.pm_now_box{
+  background-color: var(--main_txt_color_light);
+  text-align: center;
+  padding: 20px 5px;
+}
+.pm_now_box_img{
+  margin: 10px 0;
+}
+.pm_now_box_detail{
+  display: block;
+  width: 70px;
+  margin: 0 auto;
+  color: var(--main_txt_color_light);
+  background-color: var(--sub_box_color_blue);
+  padding: 3px 3px 7px 3px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px #d1d1d1;
+}
+
+/* 공지사항 */
+.pm_notice_title3  i{
+  color: #d1d1d1;
+  font-weight: bold;
+}
+.pm_notice_ul{
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.pm_notice_ul_li{
+  line-height: 40px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.pm_notice_ul_li:last-child{
+  border-bottom: none;
+}
+.pm_notice_ul_li > a{
+  display: block;
+}
+.pm_notice_ul_li > a > span:first-child{
+  font-weight: bold;
+}
+.pm_notice_ul_li > a > span:last-child{
+  float: right;
+}
+
+/* 인스타그램 */
+.pm_insta{
+  text-align: center;
+}
+.pm_insta_title3{
+  margin-bottom: 10px;
+}
+.pm_insta_box{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 157px 157px;
+  grid-template-rows: 157px 157px;
+  grid-gap: 15px;
+}

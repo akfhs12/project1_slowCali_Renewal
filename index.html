@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>슬로우캘리</title>
+  
+    <!-- 사용자가 현재 페이지에 접속하면 접속한 디바이스 해상도 체크 -->
+    <script>
+      //사용자 디바이스 기기 사이즈 체크
+      let mobile_keys = new Array('iPhone', 'iPad', 'Android', 'BlackBerry', 'Windows Phone', 'Window CE', 'LG', 'MOT', 'SAMSUNG', 'SonyErisson', 'Nokia');
+  
+      // 만약 웹페이지 주소 뒤에  move_pc_screen 값이 없다면.
+      if (document.URL.match('move_pc_screen')) mobile_keys = null;
+  
+      // 위 배열값 개수만큼 반복하여 검사를 하고 모바일 사용자이면 아래 내용을 실행
+      for (i in mobile_keys) {
+        // URL 파라미터에 'move_pc_screen'가 포함되어 있을 때 아래 내용 적용
+        if (navigator.userAgent.match(mobile_keys[i]) != null) {
+          location.href = 'http://duaal433.dothome.co.kr/project/1_project/09_coding/m/m_index.html' //모바일로 연결
+          break; //더이상 실행안함
+        }
+      }
+    </script>
+  <!-- 파비콘 -->
+  <link href="./images/pavicon.ico" rel="shortcut icon" type="image/x-icon">
+  <!-- 폰트 어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- 초기화 -->
+  <link href="./css/css_reset.css" rel="stylesheet" type="text/css">
+  <!-- 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 메인서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <!-- 헤더 상단 -->
+    <div class="h_color">
+      <div class="h_top">
+        <h1 class="h_top_logo">
+          <a href="index.html" title="슬로우캘리 메인페이지">
+            <img src="./images/logo_blue.png" alt="슬로우캘리 메인 바로가기">
+          </a>
+        </h1>
+        <span class="h_top_lnb">
+          <a href="login.html" title="로그인 바로가기"><i class="fa-solid fa-user"></i></a>
+          <a href="cart.html" title="장바구니 바로가기"><i class="fa-solid fa-cart-shopping"></i></a>
+        </span>
+      </div>
+    </div>
+
+    <!-- 헤더 하단 -->
+    <div class="h_bottom">
+      <nav class="h_bottom_gnb">
+        <ul>
+          <li><a href="slowcali.html" title="슬로우캘리 브랜드 소개">슬로우캘리</a>
+            <ul class="h_bottom_gnb_lnb">
+              <li><a href="slowcali.html" title="슬로우캘리 브랜드 소개">슬로우캘리</a></li>
+              <li><a href="position.html" title="매장찾기">매장찾기</a></li>
+              <li><a href="interiol.html" title="인테리어">인테리어</a></li>
+            </ul>
+          </li>
+          <li><a href="poke.html" title="메뉴">메뉴</a>
+            <ul class="h_bottom_gnb_lnb">
+              <li><a href="poke.html" title="포케">포케</a></li>
+              <li><a href="bowl.html" title="보울">보울</a></li>
+              <li><a href="grill.html" title="그릴">그릴</a></li>
+              <li><a href="menu_side.html" title="사이드">사이드</a></li>
+              <li><a href="topping.html" title="토핑">토핑</a></li>
+            </ul>
+          </li>
+          <li><a href="nutrition.html" title="영양정보">영양정보</a></li>
+          <li><a href="news.html" title="새소식">새소식</a>
+            <ul class="h_bottom_gnb_lnb">
+              <li><a href="news.html" title="뉴스">뉴스</a></li>
+              <li><a href="notice.html" title="공지사항">공지사항</a></li>
+              <li><a href="evnet.html" title="이벤트">이벤트</a></li>
+            </ul>
+          </li>
+          <li><a href="chain.html" title="가맹점">가맹점</a>
+            <ul class="h_bottom_gnb_lnb">
+              <li><a href="chain.html" title="가맹안내">가맹안내</a></li>
+              <li><a href="chain_ask.html" title="가맹신청">가맹신청</a></li>
+              <li><a href="chain_faq.html" title="가맹안내">가맹관련FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="goods.html" title="굿즈">굿즈</a></li>
+          <li><a href="faq.html" title="자주묻는질문">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. 메인 슬라이드 -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" title="슬라이드1">
+            <img src="./images/p_main_slide1.png" alt="슬라이드1">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="슬라이드2">
+            <img src="./images/p_main_slide2.png" alt="슬라이드2">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" title="슬라이드3">
+            <img src="./images/p_main_slide3.png" alt="슬라이드3">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 콘텐츠 -->
+
+    <!-- 2. 메뉴 소개 콘텐츠 -->
+    <section class="m_menu">
+      <!-- 페이지버튼 -->
+      <div class="page_btn">
+        <div class="m_page_btn">
+          <div>
+            <a href="index.html" title="슬로우캘리 메인 페이지" class="page_on_btn">메뉴</a>
+          </div>
+          <div>
+            <a href="chain.html" title="가맹안내" class="page_off_btn">가맹안내</a>
+          </div>
+        </div>
+      </div>
+      <!-- 페이지버튼 끝 -->
+      
+      <h2 class="m_menu_title2">MENU</h2>
+      <p>맛도 건강도 사로잡는, 슬로우캘리의 균형잡힌 한 끼</p>
+      <article class="m_menu_con">
+        <h3 class="m_menu_con_title3">메뉴 콘텐츠</h3>
+        <!-- 메뉴 소개 Swiper -->
+        <div class="swiper2 mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <a href="#" title="스파이시 연어 포케"><img src="./images/spicy_salmon_poke.png" alt="스파이시 연어 포케"></a>
+                <p class="m_menu_con_titleKr">스파이시 연어 포케</p>
+                <p class="m_menu_con_titleEng">SPICY SALMON POKE</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#" title="블랙페퍼 치킨 보울"><img src="./images/black-pepper-chicken-bowl.png" alt="블랙페퍼 치킨 보울"></a>
+                <p class="m_menu_con_titleKr">블랙페퍼 치킨 보울</p>
+                <p class="m_menu_con_titleEng">BLACK PEPPER CHICKEN BOWL</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#" title="클래식 연어 포케"><img src="./images/classic_salmon_poke.png" alt="클래식 연어 포케"></a>
+                <p class="m_menu_con_titleKr">클래식 연어 포케</p>
+                <p class="m_menu_con_titleEng">CLASSIC SALMON POKE</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#" title="라임폰즈 문어 포케"><img src="./images/lime_ponzu_octopus_poke.png" alt="라임폰즈 문어 포케"></a>
+                <p class="m_menu_con_titleKr">라임폰즈 문어 포케</p>
+                <p class="m_menu_con_titleEng">LIME PONZU OCTOPUS POKE</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#" title="오리엔탈 두부 포케"><img src="./images/oriental_tofu_poke.png" alt="오리엔탈 두부 포케"></a>
+                <p class="m_menu_con_titleKr">오리엔탈 두부 포케</p>
+                <p class="m_menu_con_titleEng">ORIENTAL TOFU POKE</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#" title="트러플 버섯 포케"><img src="./images/truffle_mushroom_poke.png" alt="트러플 버섯 포케"></a>
+                <p class="m_menu_con_titleKr">트러플 버섯 포케</p>
+                <p class="m_menu_con_titleEng">TRUFFLE MUSHROOM POKE</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. 슬로우캘리는 지금 -->
+    <section class="m_now">
+      <h2 class="m_now_title2">슬로우캘리는 지금</h2>
+      <article class="m_now_event">
+        <h3 class="m_now_title3">진행중인 이벤트</h3>
+        <div class="m_now_event_imgWrap">
+          <a href="event1.html" title="이벤트1">
+            <img src="./images/p_event1.jpg" alt="이벤트1">
+          </a>
+          <a href="event2.html" title="이벤트1">
+            <img src="./images/p_event2.jpg" alt="이벤트2">
+          </a>
+          <a href="event3.html" title="이벤트1">
+            <img src="./images/p_event3.jpg" alt="이벤트3">
+          </a>
+          <a href="event4.html" title="이벤트1">
+            <img src="./images/p_event4.jpg" alt="이벤트4">
+          </a>
+          <a href="event4.html" title="이벤트1">
+            <img src="./images/p_event5.jpg" alt="이벤트4">
+          </a>
+          <a href="event4.html" title="이벤트1">
+            <img src="./images/p_event6.jpg" alt="이벤트4">
+          </a>
+        </div>
+        <a href="event.html" title="이벤트" class="view_btn">자세히보기</a>
+      </article>
+      <div class="m_now_bottom">
+        <article class="m_now_bottom_notice">
+          <h3 class="m_now_bottom_title3 m_now_bottom_notice_title3">공지사항</h3>
+          <ul class="m_now_bottom_notice_ul">
+            <li>
+              <a href="notice1.html" title="브랜드 대상 도전">
+
+                <span>브랜드 대상 도전</span>
+                <span>2024.04.01</span>
+              </a>
+            </li>
+            <li>
+              <a href="notice2.html" title="브랜드 대상 도전">
+                <span>슬로우캘리 전 메뉴 칼로리표 체크!</span>
+                <span>2024.03.28</span>
+              </a>
+            </li>
+            <li>
+              <a href="notice3.html" title="브랜드 대상 도전">
+                <span>공지사항</span>
+                <span>2024.03.10</span>
+              </a>
+            </li>
+            <li>
+              <a href="notice3.html" title="브랜드 대상 도전">
+                <span>공지사항</span>
+                <span>2024.03.10</span>
+              </a>
+            </li>
+            <li>
+              <a href="notice3.html" title="브랜드 대상 도전">
+                <span>공지사항</span>
+                <span>2024.03.10</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="m_now_bottom_position">
+          <h3 class="m_now_bottom_title3">매장위치</h3>
+          <a href="position.html" title="매장위치" class="m_now_bottom_img">
+            <img src="./images/p_shop_position.png" alt="매장위치">
+            <span>자세히보기</span>
+          </a>
+        </article>
+        <article class="m_now_bottom_goods">
+          <h3 class="m_now_bottom_title3">굿즈</h3>
+          <a href="goods.html" title="굿즈샵" class="m_now_bottom_img">
+            <img src="./images/p_goods.png" alt="굿즈샵">
+            <span>자세히보기</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. 인스타그램 콘텐츠 -->
+    <article class="m_insta">
+      <h3 class="m_insta_title">INSTAGRAM</h3>
+      <div class="m_insta_cont">
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta1.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta2.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta3.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta4.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta5.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta6.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta7.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta8.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta9.png" alt="인스타그램 게시글">
+        </a>
+        <a href="insta.html" title="인스타그램 게시글">
+          <img src="./images/p_insta10.png" alt="인스타그램 게시글">
+        </a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div class="fnb">
+      <p>슬로우캘리 &#124; Slow Cali</p>
+      <p>주식회사 더슬로우컴퍼니 &#124; 대표: 홍길동 &#124; 개인정보관리책임자: 홍길동</p>
+      <p>서울특별시 종로구 관수동 20 국일관드림팰리스 2층</p>
+      <p>가맹문의: 1234-5678 &#124; 사업자등록번호: 123-45-67890</p>
+      <p>akfhs12@gamil.com</p>
+    </div>
+    <div class="fnb_nav">
+      <span><a href="agreement.html" title="이용약관">이용약관</a></span>
+      <strong><a href="personal.html" title="개인정보처리방침">개인정보처리방침</a></strong>
+    </div>
+  </footer>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+
+
+      },
+      slidesPerView: 3,
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* 노토산스 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* 강원교육모두체 웹폰트 */
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 스타일 (폰트, 색상,  */
+
+:root{
+  --main_txt_color_dark: #251a18;
+  --main_txt_color_light: #fff8f0; 
+  --sub_box_color_pupple: #524FC7;
+
+  --gnb_txt_size: 26px;
+  --main_txt_size: 18px;
+}
+
+body{
+  font-family: "Noto Sans KR", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--main_txt_color_dark);
+  line-height: 1.6;
+}
+a{
+  text-decoration: none;
+  color: var(--main_txt_colo_dark);
+}
+
+/* header 서식 */
+header{
+  width: 100%;
+  background-color: var(--sub_box_color_pupple);
+}
+.h_color{
+  width: 100%;
+  background-color: #ffffff;
+}
+.h_top, .h_bottom{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header 상단 */
+.h_top{
+  position: relative;
+}
+.h_top_logo{
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+.h_top_lnb{
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+}
+.h_top_lnb > a > i{
+  padding-left: 25px;
+  font-size: 22px;
+}
+
+/* header 하단 */
+.h_bottom{
+  width: 100%;
+  background-color: rgba(255, 248, 240, 0.9);
+  transition: 0.5s;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+}
+.h_bottom:hover{
+  height: 350px;
+}
+.h_bottom_gnb{
+  background-color: var(--sub_box_color_pupple);
+}
+.h_bottom_gnb > ul{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.h_bottom_gnb > ul > li{
+  text-align: center;
+}
+
+.h_bottom_gnb > ul > li > a{
+  display: block;
+  font-family: 'GangwonEdu_OTFBoldA', 'noto Sans KR', Arial, Helvetica, sans-serif;
+  font-size:var(--main_txt_size);
+  font-weight: bold;
+  color: var(--main_txt_color_light);
+  padding: 15px 0;
+}
+
+.h_bottom_gnb > ul > li > a:hover{
+  text-decoration: underline;
+}
+.h_bottom_gnb_lnb{
+  margin: 0 auto;
+}
+.h_bottom_gnb_lnb > li > a{
+  line-height: 50px;
+  font-size: var(--main_txt_size);
+}
+.h_bottom_gnb_lnb > li > a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* footer 서식 */
+footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  color: var(--main_txt_color_light);
+  background-color: var(--sub_box_color_pupple);
+}
+.fnb{
+  margin-bottom: 20px;
+}
+
+/* 메인 스와이퍼 슬라이드 */
+.swiper{
+  width: 100%;
+  margin-top: 50px;
+}
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  background-color: var(--main_txt_color_light);
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--sub_box_color_pupple);
+}
